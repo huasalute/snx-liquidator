@@ -11,7 +11,7 @@ async function main() {
     .attach(CONTRACT_ADDR)
     .connect(signer) as SnxLiquidator;
 
-  const tx = await snxLiquidator.mintCHI('200');
+  const tx = await snxLiquidator.mintCHI('300');
   tx.wait(1);
   console.log(`CHI minted, tx hash ${tx.hash}`);
 }
